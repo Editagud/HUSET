@@ -1,0 +1,144 @@
+body{
+background-color: #553c4f;
+color: white;
+font-family: futura;
+}
+
+header{
+width: 100%;
+background:#1b2125;
+  
+}
+.logo{
+   width:40%;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    
+}
+
+
+.menu-toggle-checkbox {
+  display: none;
+}
+
+.menu-toggle-checkbox:checked ~ .side-nav {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  border-radius: 10%;
+  width: 4em;
+  height: 4em;  
+  left: 1rem;
+  position: fixed;
+  transition: color .3s ease;
+  top: 1rem;
+  z-index: 3;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-toggle {
+  color: #553c4f;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  display: block;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  transition: opacity .3s ease; visibility .3s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu-toggle-checkbox:checked ~ .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  background: rgba(85,60,79,0.5) ;
+  height: 100vh;
+  max-width: 60%;
+  padding: 3rem 1rem;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  transition: transform .3s ease;
+  transform: translateX(-100%);
+  width: 100%;
+  z-index: 2;
+}
+
+
+a {
+  color: white;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5em;
+    margin-left: 20%;
+  text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.event{
+    border: 1px solid black;
+    border-radius: 8%;
+    padding: 1em;
+    margin: 1em;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #8291BC 0%, #5b2e50 100%);
+    border-image-slice: 1;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color:#1b2125;
+     position: fixed;
+    text-align: center;
+   
+    
+}
+
+.imgicon{
+    width: 2em;;
+}
+.sociallink {
+    display: inline;
+    margin: 0;
+  
+}
